@@ -27,7 +27,7 @@ else
 44 5 78 -> 78
 22 3 9 -> 22
 */
-
+/*
 Console.WriteLine("Введите первое целое число");
 string number = Console.ReadLine()!;
 int num = int.Parse(number);
@@ -44,3 +44,16 @@ if (num3 > max) max = num3;
 
 Console.Write("max = ");
 Console.WriteLine(max);
+*/
+
+/*Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+4 -> да
+-3 -> нет
+7 -> нет
+*/
+
+Console.WriteLine("Введите число");
+string number = Console.ReadLine()!;
+int num = int.Parse(number);
+bool check = num % 2 == 0;
+Console.Write(check);
