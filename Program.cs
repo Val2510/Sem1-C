@@ -51,9 +51,31 @@ Console.WriteLine(max);
 -3 -> нет
 7 -> нет
 */
-
+/*
 Console.WriteLine("Введите число");
 string number = Console.ReadLine()!;
 int num = int.Parse(number);
 bool check = num % 2 == 0;
 Console.Write(check);
+*/
+
+/*Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+5 -> 2, 4
+8 -> 2, 4, 6, 8
+*/
+
+Console.WriteLine("Введите число");
+string number = Console.ReadLine()!;
+int num = int.Parse(number);
+int count = 1;
+
+if (count == 1)
+{
+    count+=1;
+}
+
+while(count <= num)
+{
+    Console.Write(count + ", ");
+    count +=2;
+}
